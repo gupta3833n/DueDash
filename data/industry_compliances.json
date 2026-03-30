@@ -1,0 +1,539 @@
+{
+  "Manufacturing": {
+    "description": "Factories, production units, industrial manufacturing",
+    "applicable_entities": ["Private Company", "LLP", "Partnership", "Proprietorship"],
+    "compliances": [
+      {
+        "id": "factory_annual_return",
+        "name": "Factory Annual Return (Form No. 21 & 22)",
+        "category": "Industry-Specific",
+        "sub_category": "Factory Act",
+        "description": "Annual return under Factories Act 1948 to the Chief Inspector of Factories",
+        "due_month": 1,
+        "due_day": 15,
+        "frequency": "annual",
+        "form_number": "Form 21, Form 22",
+        "authority": "Chief Inspector of Factories (State)",
+        "penalty": "Up to Rs 2 lakh",
+        "priority": "high"
+      },
+      {
+        "id": "factory_license_renewal",
+        "name": "Factory License Renewal",
+        "category": "Industry-Specific",
+        "sub_category": "Factory Act",
+        "description": "Annual renewal of factory license under Factories Act",
+        "due_month": 12,
+        "due_day": 31,
+        "frequency": "annual",
+        "authority": "Inspector of Factories",
+        "penalty": "Manufacturing without valid license is punishable",
+        "priority": "high"
+      },
+      {
+        "id": "pollution_noc_renewal",
+        "name": "Pollution NOC / Consent to Operate Renewal",
+        "category": "Industry-Specific",
+        "sub_category": "Pollution Board",
+        "description": "Consent to Operate (CTO) renewal under Air & Water Acts from State Pollution Control Board",
+        "due_month": 3,
+        "due_day": 31,
+        "frequency": "annual",
+        "authority": "State Pollution Control Board (SPCB)",
+        "penalty": "Closure notice, Rs 10,000 to Rs 1,00,000",
+        "priority": "high"
+      },
+      {
+        "id": "bis_certification",
+        "name": "BIS Certification Renewal",
+        "category": "Industry-Specific",
+        "sub_category": "BIS / Quality",
+        "description": "Bureau of Indian Standards certification renewal for regulated products",
+        "due_month": 3,
+        "due_day": 31,
+        "frequency": "annual",
+        "authority": "Bureau of Indian Standards (BIS)",
+        "penalty": "Suspension of certification, product recalls",
+        "priority": "medium"
+      },
+      {
+        "id": "mpcb_env_statement",
+        "name": "Annual Environment Statement",
+        "category": "Industry-Specific",
+        "sub_category": "Pollution Board",
+        "description": "Annual environmental statement in Form V to State Pollution Control Board",
+        "due_month": 9,
+        "due_day": 30,
+        "frequency": "annual",
+        "form_number": "Form V",
+        "authority": "State Pollution Control Board",
+        "penalty": "Prosecution under Environment Protection Act",
+        "priority": "medium"
+      },
+      {
+        "id": "hazmat_return",
+        "name": "Hazardous Waste Annual Return",
+        "category": "Industry-Specific",
+        "sub_category": "Pollution Board",
+        "description": "Annual return for hazardous waste generated/handled under Hazardous Waste Management Rules",
+        "due_month": 6,
+        "due_day": 30,
+        "frequency": "annual",
+        "authority": "State Pollution Control Board",
+        "penalty": "Imprisonment up to 5 years and fine",
+        "priority": "high"
+      },
+      {
+        "id": "labour_cess_manufacturing",
+        "name": "Labour Cess Return (BOCW)",
+        "category": "Industry-Specific",
+        "sub_category": "Labour",
+        "description": "Building & Other Construction Workers cess if construction activities ongoing",
+        "due_month": 4,
+        "due_day": 30,
+        "frequency": "annual",
+        "authority": "State Labour Welfare Board",
+        "penalty": "Interest @ 2% per month",
+        "priority": "low"
+      }
+    ]
+  },
+
+  "IT / ITES": {
+    "description": "Software, IT services, BPO, KPO, data centers",
+    "applicable_entities": ["Private Company", "LLP", "Partnership", "Proprietorship"],
+    "compliances": [
+      {
+        "id": "stpi_softex_quarterly",
+        "name": "STPI SOFTEX Form Filing (Quarterly)",
+        "category": "Industry-Specific",
+        "sub_category": "STPI / DGFT",
+        "description": "Software export declaration in SOFTEX form to STPI/RBI for STP units",
+        "due_months": [7, 10, 1, 4],
+        "due_day": 30,
+        "frequency": "quarterly",
+        "authority": "Software Technology Parks of India (STPI)",
+        "penalty": "FEMA violations, penalty up to 3x the amount",
+        "priority": "high",
+        "applicable_if": "STPI registered"
+      },
+      {
+        "id": "stpi_annual_performance",
+        "name": "STPI Annual Performance Report",
+        "category": "Industry-Specific",
+        "sub_category": "STPI / DGFT",
+        "description": "Annual performance and achievement report to STPI",
+        "due_month": 6,
+        "due_day": 30,
+        "frequency": "annual",
+        "authority": "Software Technology Parks of India",
+        "penalty": "Show cause notice, suspension of STPI benefits",
+        "priority": "medium"
+      },
+      {
+        "id": "sez_quarterly_returns",
+        "name": "SEZ Unit Quarterly Returns (Form I)",
+        "category": "Industry-Specific",
+        "sub_category": "SEZ",
+        "description": "Quarterly production and export performance return for SEZ units",
+        "due_months": [7, 10, 1, 4],
+        "due_day": 30,
+        "frequency": "quarterly",
+        "form_number": "Form I",
+        "authority": "Development Commissioner, SEZ",
+        "penalty": "De-notification of SEZ unit",
+        "priority": "high",
+        "applicable_if": "SEZ unit"
+      },
+      {
+        "id": "digital_posh_compliance",
+        "name": "POSH Annual Report",
+        "category": "Industry-Specific",
+        "sub_category": "Labour",
+        "description": "Annual report on Sexual Harassment complaints to District Officer (mandatory for 10+ employees)",
+        "due_month": 1,
+        "due_day": 31,
+        "frequency": "annual",
+        "authority": "District Officer / Labour Dept",
+        "penalty": "Rs 50,000 fine and possible license cancellation",
+        "priority": "medium"
+      },
+      {
+        "id": "it_dot_registration",
+        "name": "DoT OSP Registration Renewal",
+        "category": "Industry-Specific",
+        "sub_category": "Telecom",
+        "description": "Other Service Provider registration renewal with DoT for BPO/call centres",
+        "due_month": 3,
+        "due_day": 31,
+        "frequency": "annual",
+        "authority": "Department of Telecommunications (DoT)",
+        "penalty": "Suspension of operations",
+        "priority": "medium",
+        "applicable_if": "BPO / Call Centre operations"
+      }
+    ]
+  },
+
+  "Healthcare": {
+    "description": "Hospitals, clinics, diagnostic labs, pharmacies, medical devices",
+    "applicable_entities": ["Private Company", "LLP", "Partnership", "Proprietorship", "Trust", "Society"],
+    "compliances": [
+      {
+        "id": "nabh_renewal",
+        "name": "NABH Accreditation Renewal",
+        "category": "Industry-Specific",
+        "sub_category": "Healthcare Accreditation",
+        "description": "National Accreditation Board for Hospitals renewal (valid for 3 years, surveillance annual)",
+        "due_month": 12,
+        "due_day": 31,
+        "frequency": "annual",
+        "authority": "Quality Council of India - NABH",
+        "penalty": "Loss of accreditation status",
+        "priority": "high"
+      },
+      {
+        "id": "bmw_annual_report",
+        "name": "Biomedical Waste Annual Report",
+        "category": "Industry-Specific",
+        "sub_category": "Waste Management",
+        "description": "Annual report on biomedical waste generation and disposal to SPCB under BMW Rules 2016",
+        "due_month": 6,
+        "due_day": 30,
+        "frequency": "annual",
+        "authority": "State Pollution Control Board",
+        "penalty": "Fine up to Rs 1 lakh per violation",
+        "priority": "high"
+      },
+      {
+        "id": "drug_license_renewal",
+        "name": "Drug License Renewal (Form 20/21)",
+        "category": "Industry-Specific",
+        "sub_category": "Drug Control",
+        "description": "Retail/wholesale drug license renewal under Drugs & Cosmetics Act",
+        "due_month": 12,
+        "due_day": 31,
+        "frequency": "annual",
+        "form_number": "Form 19/19A",
+        "authority": "State Drug Controller",
+        "penalty": "Imprisonment up to 3 years, fine up to Rs 5 lakh",
+        "priority": "high"
+      },
+      {
+        "id": "clinical_establishment_renewal",
+        "name": "Clinical Establishment Registration Renewal",
+        "category": "Industry-Specific",
+        "sub_category": "Clinical Establishment",
+        "description": "Annual renewal of registration under Clinical Establishments (Registration & Regulation) Act 2010",
+        "due_month": 3,
+        "due_day": 31,
+        "frequency": "annual",
+        "authority": "State/District Appropriate Authority",
+        "penalty": "Rs 10,000 to Rs 50,000 fine",
+        "priority": "high"
+      },
+      {
+        "id": "pcpndt_quarterly",
+        "name": "PCPNDT Quarterly Return (Form H)",
+        "category": "Industry-Specific",
+        "sub_category": "PCPNDT",
+        "description": "Quarterly return on use of ultrasound machines under PC-PNDT Act",
+        "due_months": [7, 10, 1, 4],
+        "due_day": 5,
+        "frequency": "quarterly",
+        "form_number": "Form H",
+        "authority": "District Appropriate Authority (DAA)",
+        "penalty": "Cancellation of registration, imprisonment",
+        "priority": "high",
+        "applicable_if": "Diagnostic centres with USG"
+      },
+      {
+        "id": "fire_noc_renewal",
+        "name": "Fire NOC Renewal",
+        "category": "Industry-Specific",
+        "sub_category": "Fire Safety",
+        "description": "Annual renewal of Fire NOC for hospital buildings",
+        "due_month": 3,
+        "due_day": 31,
+        "frequency": "annual",
+        "authority": "Fire Department",
+        "penalty": "Rs 2,000 to Rs 5,000, closure notice",
+        "priority": "medium"
+      }
+    ]
+  },
+
+  "Construction / Real Estate": {
+    "description": "Builders, developers, contractors, real estate agencies",
+    "applicable_entities": ["Private Company", "LLP", "Partnership", "Proprietorship"],
+    "compliances": [
+      {
+        "id": "rera_quarterly_update",
+        "name": "RERA Project Quarterly Update",
+        "category": "Industry-Specific",
+        "sub_category": "RERA",
+        "description": "Quarterly update of project status on RERA portal (mandatory for registered projects)",
+        "due_months": [7, 10, 1, 4],
+        "due_day": 31,
+        "frequency": "quarterly",
+        "authority": "State RERA Authority",
+        "penalty": "Up to 5% of project cost",
+        "priority": "high"
+      },
+      {
+        "id": "rera_annual_audit",
+        "name": "RERA Annual Audit Report",
+        "category": "Industry-Specific",
+        "sub_category": "RERA",
+        "description": "Annual CA-certified audit report for RERA registered projects",
+        "due_month": 6,
+        "due_day": 30,
+        "frequency": "annual",
+        "authority": "State RERA Authority",
+        "penalty": "Up to 5% of project cost",
+        "priority": "high"
+      },
+      {
+        "id": "bocw_cess_return",
+        "name": "BOCW Labour Cess Return",
+        "category": "Industry-Specific",
+        "sub_category": "Labour Cess",
+        "description": "Building & Other Construction Workers cess deposit (1% of construction cost) and return",
+        "due_month": 4,
+        "due_day": 30,
+        "frequency": "annual",
+        "authority": "State BOCW Welfare Board",
+        "penalty": "Interest @ 2% per month + fine",
+        "priority": "high"
+      },
+      {
+        "id": "bocw_annual_return",
+        "name": "BOCW Annual Return",
+        "category": "Industry-Specific",
+        "sub_category": "Labour",
+        "description": "Annual return of construction workers employed under BOCW Act",
+        "due_month": 2,
+        "due_day": 28,
+        "frequency": "annual",
+        "authority": "State BOCW Welfare Board",
+        "penalty": "Prosecution under BOCW Act",
+        "priority": "medium"
+      },
+      {
+        "id": "env_clearance_compliance",
+        "name": "Environment Clearance Compliance Report",
+        "category": "Industry-Specific",
+        "sub_category": "Environment",
+        "description": "Six-monthly compliance report for projects requiring Environment Clearance",
+        "due_months": [5, 11],
+        "due_day": 31,
+        "frequency": "half_yearly",
+        "authority": "MoEFCC / State Environment Dept",
+        "penalty": "Revocation of EC, prosecution",
+        "priority": "high"
+      }
+    ]
+  },
+
+  "Trading / Import-Export": {
+    "description": "Wholesale traders, importers, exporters, distributors",
+    "applicable_entities": ["Private Company", "LLP", "Partnership", "Proprietorship"],
+    "compliances": [
+      {
+        "id": "iec_renewal",
+        "name": "IEC (Import Export Code) Updation",
+        "category": "Industry-Specific",
+        "sub_category": "DGFT",
+        "description": "Annual updation/validation of IEC on DGFT portal (mandatory even if no changes)",
+        "due_month": 6,
+        "due_day": 30,
+        "frequency": "annual",
+        "authority": "DGFT",
+        "penalty": "Deactivation of IEC",
+        "priority": "high"
+      },
+      {
+        "id": "rodtep_claim",
+        "name": "RoDTEP / MEIS Claim Filing",
+        "category": "Industry-Specific",
+        "sub_category": "DGFT",
+        "description": "Remission of Duties and Taxes on Exported Products (RoDTEP) claim on Icegate",
+        "due_month": 12,
+        "due_day": 31,
+        "frequency": "annual",
+        "authority": "DGFT / Customs",
+        "penalty": "Loss of incentive",
+        "priority": "medium"
+      },
+      {
+        "id": "fssai_renewal_trading",
+        "name": "FSSAI License Renewal",
+        "category": "Industry-Specific",
+        "sub_category": "Food Safety",
+        "description": "FSSAI central/state license renewal for food trading/distribution (applicable if food products traded)",
+        "due_month": 12,
+        "due_day": 31,
+        "frequency": "annual",
+        "authority": "FSSAI",
+        "penalty": "Rs 2 lakh fine, imprisonment up to 6 months",
+        "priority": "high",
+        "applicable_if": "Food products"
+      },
+      {
+        "id": "legal_metrology",
+        "name": "Legal Metrology License Renewal",
+        "category": "Industry-Specific",
+        "sub_category": "Weights & Measures",
+        "description": "Annual renewal of dealer/packer license under Legal Metrology Act",
+        "due_month": 3,
+        "due_day": 31,
+        "frequency": "annual",
+        "authority": "State Legal Metrology Dept",
+        "penalty": "Rs 25,000 to Rs 2 lakh",
+        "priority": "medium"
+      }
+    ]
+  },
+
+  "FMCG / Food Processing": {
+    "description": "Food manufacturing, processing, packaged foods, beverages",
+    "applicable_entities": ["Private Company", "LLP", "Partnership", "Proprietorship"],
+    "compliances": [
+      {
+        "id": "fssai_annual_return",
+        "name": "FSSAI Annual Return (Form D-1)",
+        "category": "Industry-Specific",
+        "sub_category": "Food Safety",
+        "description": "Annual return by food business operator to FSSAI by May 31",
+        "due_month": 5,
+        "due_day": 31,
+        "frequency": "annual",
+        "form_number": "Form D-1",
+        "authority": "FSSAI",
+        "penalty": "Rs 2 lakh fine",
+        "priority": "high"
+      },
+      {
+        "id": "fssai_license_renewal",
+        "name": "FSSAI Central License Renewal",
+        "category": "Industry-Specific",
+        "sub_category": "Food Safety",
+        "description": "FSSAI central license renewal (for turnover > Rs 20 Cr or interstate operations)",
+        "due_month": 12,
+        "due_day": 31,
+        "frequency": "annual",
+        "authority": "FSSAI",
+        "penalty": "Rs 5 lakh fine, prosecution",
+        "priority": "high"
+      },
+      {
+        "id": "etp_compliance",
+        "name": "Effluent Treatment Plant (ETP) Compliance",
+        "category": "Industry-Specific",
+        "sub_category": "Pollution Board",
+        "description": "Regular submission of effluent quality reports to State Pollution Control Board",
+        "due_month": 9,
+        "due_day": 30,
+        "frequency": "annual",
+        "authority": "State Pollution Control Board",
+        "penalty": "Closure, fine up to Rs 1 lakh",
+        "priority": "high"
+      },
+      {
+        "id": "agmark_renewal",
+        "name": "AGMARK Certification Renewal",
+        "category": "Industry-Specific",
+        "sub_category": "Quality",
+        "description": "AGMARK certification renewal for agricultural products",
+        "due_month": 3,
+        "due_day": 31,
+        "frequency": "annual",
+        "authority": "Directorate of Marketing & Inspection (DMI)",
+        "penalty": "Cancellation of certification",
+        "priority": "medium",
+        "applicable_if": "Agricultural products"
+      },
+      {
+        "id": "fpo_mark",
+        "name": "FPO Mark / Fruit Products Licence",
+        "category": "Industry-Specific",
+        "sub_category": "Food Safety",
+        "description": "Annual renewal of Fruit Products Order licence for processed fruit/vegetable businesses",
+        "due_month": 3,
+        "due_day": 31,
+        "frequency": "annual",
+        "authority": "Ministry of Food Processing Industries",
+        "penalty": "Prosecution under Prevention of Food Adulteration Act",
+        "priority": "medium",
+        "applicable_if": "Fruit/vegetable processing"
+      }
+    ]
+  },
+
+  "Financial Services": {
+    "description": "NBFCs, insurance agents, stock brokers, mutual fund distributors",
+    "applicable_entities": ["Private Company", "LLP", "Partnership", "Proprietorship", "Individual"],
+    "compliances": [
+      {
+        "id": "rbi_nbfc_return",
+        "name": "RBI NBFC Quarterly Return (NBS-1, NBS-2)",
+        "category": "Industry-Specific",
+        "sub_category": "RBI",
+        "description": "Quarterly prudential returns by NBFCs to RBI",
+        "due_months": [7, 10, 1, 4],
+        "due_day": 15,
+        "frequency": "quarterly",
+        "authority": "Reserve Bank of India",
+        "penalty": "Rs 1 lakh to Rs 1 crore",
+        "priority": "high",
+        "applicable_if": "NBFC registered"
+      },
+      {
+        "id": "nbfc_annual_return",
+        "name": "NBFC Annual Return to RBI",
+        "category": "Industry-Specific",
+        "sub_category": "RBI",
+        "description": "Annual statutory return to RBI — NBS-6, Auditor's Report on statutory compliances",
+        "due_month": 12,
+        "due_day": 31,
+        "frequency": "annual",
+        "authority": "Reserve Bank of India",
+        "penalty": "Rs 1 lakh per day of default",
+        "priority": "high",
+        "applicable_if": "NBFC registered"
+      },
+      {
+        "id": "sebi_stockbroker_renewal",
+        "name": "SEBI Stock Broker Registration Renewal",
+        "category": "Industry-Specific",
+        "sub_category": "SEBI",
+        "description": "Annual renewal of SEBI stock broker/sub-broker registration",
+        "due_month": 3,
+        "due_day": 31,
+        "frequency": "annual",
+        "authority": "SEBI",
+        "penalty": "Rs 1 lakh to Rs 25 crore",
+        "priority": "high"
+      },
+      {
+        "id": "amfi_amrn",
+        "name": "AMFI ARN Renewal (Mutual Fund Distributor)",
+        "category": "Industry-Specific",
+        "sub_category": "AMFI",
+        "description": "AMFI Registration Number (ARN) renewal for mutual fund distributors (3-year cycle, CPE mandatory)",
+        "due_month": 3,
+        "due_day": 31,
+        "frequency": "triennial",
+        "authority": "AMFI",
+        "penalty": "Suspension of distribution business",
+        "priority": "high"
+      }
+    ]
+  },
+
+  "General": {
+    "description": "No industry-specific compliances — only central and state compliances apply",
+    "applicable_entities": ["Private Company", "LLP", "Partnership", "Proprietorship", "Individual", "Trust", "Society"],
+    "compliances": []
+  }
+}

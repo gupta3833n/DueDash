@@ -1,0 +1,528 @@
+{
+  "professional_tax": {
+    "Maharashtra": {
+      "applicable": true,
+      "max_annual": 2500,
+      "payment_frequency": "monthly",
+      "payment_due_day": 31,
+      "return_frequency": "annual",
+      "return_due_month": 3,
+      "return_due_day": 31,
+      "enrollment_due_month": 6,
+      "enrollment_due_day": 30,
+      "slabs": [
+        {"min": 0,     "max": 7500,  "monthly_tax": 0,   "note": "Nil"},
+        {"min": 7501,  "max": 10000, "monthly_tax": 175,  "note": "Rs 175/month"},
+        {"min": 10001, "max": null,  "monthly_tax": 200,  "note": "Rs 200/month (Rs 300 in February)"}
+      ],
+      "notes": "Annual maximum Rs 2,500. February installment is Rs 300 instead of Rs 200. Employer enrollment certificate renewal by 30 June."
+    },
+    "Karnataka": {
+      "applicable": true,
+      "max_annual": 2400,
+      "payment_frequency": "monthly",
+      "payment_due_day": 20,
+      "return_frequency": "annual",
+      "return_due_month": 4,
+      "return_due_day": 20,
+      "enrollment_due_month": 4,
+      "enrollment_due_day": 30,
+      "slabs": [
+        {"min": 0,     "max": 14999, "monthly_tax": 0,   "note": "Nil"},
+        {"min": 15000, "max": 24999, "monthly_tax": 150,  "note": "Rs 150/month"},
+        {"min": 25000, "max": 34999, "monthly_tax": 175,  "note": "Rs 175/month"},
+        {"min": 35000, "max": null,  "monthly_tax": 200,  "note": "Rs 200/month (max)"}
+      ],
+      "notes": "Payment due by 20th of following month. Annual return by 20th April."
+    },
+    "Gujarat": {
+      "applicable": true,
+      "max_annual": 2400,
+      "payment_frequency": "quarterly",
+      "payment_due_months": [9, 12, 3, 6],
+      "payment_due_day": 15,
+      "return_frequency": "annual",
+      "return_due_month": 3,
+      "return_due_day": 31,
+      "slabs": [
+        {"min": 0,    "max": 5999,  "monthly_tax": 0,   "note": "Nil"},
+        {"min": 6000, "max": 8999,  "monthly_tax": 80,   "note": "Rs 80/month"},
+        {"min": 9000, "max": 11999, "monthly_tax": 150,  "note": "Rs 150/month"},
+        {"min": 12000,"max": null,  "monthly_tax": 200,  "note": "Rs 200/month"}
+      ],
+      "notes": "Quarterly payment: 15 Sep, 15 Dec, 15 Mar, 15 Jun. Annual return by 31 March."
+    },
+    "West Bengal": {
+      "applicable": true,
+      "max_annual": 2400,
+      "payment_frequency": "monthly",
+      "payment_due_day": 21,
+      "return_frequency": "annual",
+      "return_due_month": 7,
+      "return_due_day": 31,
+      "slabs": [
+        {"min": 0,     "max": 10000, "monthly_tax": 0,   "note": "Nil"},
+        {"min": 10001, "max": 15000, "monthly_tax": 110,  "note": "Rs 110/month"},
+        {"min": 15001, "max": 25000, "monthly_tax": 130,  "note": "Rs 130/month"},
+        {"min": 25001, "max": 40000, "monthly_tax": 150,  "note": "Rs 150/month"},
+        {"min": 40001, "max": null,  "monthly_tax": 200,  "note": "Rs 200/month"}
+      ],
+      "notes": "Payment due by 21st of following month. Annual return by 31 July."
+    },
+    "Andhra Pradesh": {
+      "applicable": true,
+      "max_annual": 2400,
+      "payment_frequency": "monthly",
+      "payment_due_day": 10,
+      "return_frequency": "half_yearly",
+      "return_due_months": [9, 3],
+      "return_due_day": 30,
+      "slabs": [
+        {"min": 0,     "max": 15000, "monthly_tax": 0,   "note": "Nil"},
+        {"min": 15001, "max": 20000, "monthly_tax": 150,  "note": "Rs 150/month"},
+        {"min": 20001, "max": null,  "monthly_tax": 200,  "note": "Rs 200/month"}
+      ],
+      "notes": "Payment due 10th of following month. Half-yearly returns: Sep 30 and Mar 30."
+    },
+    "Telangana": {
+      "applicable": true,
+      "max_annual": 2400,
+      "payment_frequency": "monthly",
+      "payment_due_day": 10,
+      "return_frequency": "half_yearly",
+      "return_due_months": [9, 3],
+      "return_due_day": 30,
+      "slabs": [
+        {"min": 0,     "max": 15000, "monthly_tax": 0,   "note": "Nil"},
+        {"min": 15001, "max": 20000, "monthly_tax": 150,  "note": "Rs 150/month"},
+        {"min": 20001, "max": null,  "monthly_tax": 200,  "note": "Rs 200/month"}
+      ],
+      "notes": "Same structure as Andhra Pradesh. Payment due 10th of following month."
+    },
+    "Tamil Nadu": {
+      "applicable": true,
+      "max_annual": 2400,
+      "payment_frequency": "half_yearly",
+      "payment_due_months": [9, 3],
+      "payment_due_day": 30,
+      "return_frequency": "annual",
+      "return_due_month": 4,
+      "return_due_day": 30,
+      "slabs": [
+        {"min": 0,     "max": 21000, "half_yearly_tax": 0,    "note": "Nil"},
+        {"min": 21001, "max": 30000, "half_yearly_tax": 135,  "note": "Rs 135 per half-year"},
+        {"min": 30001, "max": 45000, "half_yearly_tax": 315,  "note": "Rs 315 per half-year"},
+        {"min": 45001, "max": 60000, "half_yearly_tax": 690,  "note": "Rs 690 per half-year"},
+        {"min": 60001, "max": 75000, "half_yearly_tax": 1025, "note": "Rs 1025 per half-year"},
+        {"min": 75001, "max": null,  "half_yearly_tax": 1250, "note": "Rs 1250 per half-year (max Rs 2500/year)"}
+      ],
+      "notes": "Half-yearly payments: Sep 30 and Mar 31. Annual return by Apr 30."
+    },
+    "Kerala": {
+      "applicable": true,
+      "max_annual": 1440,
+      "payment_frequency": "half_yearly",
+      "payment_due_months": [8, 2],
+      "payment_due_day": 31,
+      "return_frequency": "half_yearly",
+      "return_due_months": [8, 2],
+      "return_due_day": 31,
+      "slabs": [
+        {"min": 0,     "max": 11500, "half_yearly_tax": 0,   "note": "Nil"},
+        {"min": 11501, "max": 23000, "half_yearly_tax": 120,  "note": "Rs 120 per half-year"},
+        {"min": 23001, "max": 45000, "half_yearly_tax": 360,  "note": "Rs 360 per half-year"},
+        {"min": 45001, "max": null,  "half_yearly_tax": 720,  "note": "Rs 720 per half-year"}
+      ],
+      "notes": "Half-yearly: Aug 31 (Apr-Sep) and Feb 28 (Oct-Mar)."
+    },
+    "Odisha": {
+      "applicable": true,
+      "max_annual": 2400,
+      "payment_frequency": "monthly",
+      "payment_due_day": 28,
+      "return_frequency": "annual",
+      "return_due_month": 4,
+      "return_due_day": 30,
+      "slabs": [
+        {"min": 0,      "max": 13304, "monthly_tax": 0,   "note": "Nil"},
+        {"min": 13305,  "max": 25000, "monthly_tax": 125,  "note": "Rs 125/month"},
+        {"min": 25001,  "max": 41666, "monthly_tax": 150,  "note": "Rs 150/month"},
+        {"min": 41667,  "max": null,  "monthly_tax": 200,  "note": "Rs 200/month"}
+      ],
+      "notes": "Payment due by 28th of month. Annual return by 30 April."
+    },
+    "Madhya Pradesh": {
+      "applicable": true,
+      "max_annual": 2500,
+      "payment_frequency": "monthly",
+      "payment_due_day": 10,
+      "return_frequency": "annual",
+      "return_due_month": 3,
+      "return_due_day": 31,
+      "slabs": [
+        {"min": 0,     "max": 18750, "monthly_tax": 0,   "note": "Nil"},
+        {"min": 18751, "max": null,  "monthly_tax": 208,  "note": "Rs 208/month approx (Rs 2496/year)"}
+      ],
+      "notes": "PT is levied on all salaried employees earning above Rs 18,750/month."
+    },
+    "Assam": {
+      "applicable": true,
+      "max_annual": 2500,
+      "payment_frequency": "monthly",
+      "payment_due_day": 28,
+      "return_frequency": "annual",
+      "return_due_month": 3,
+      "return_due_day": 31,
+      "slabs": [
+        {"min": 0,     "max": 10000, "monthly_tax": 0,   "note": "Nil"},
+        {"min": 10001, "max": 15000, "monthly_tax": 150,  "note": "Rs 150/month"},
+        {"min": 15001, "max": 25000, "monthly_tax": 180,  "note": "Rs 180/month"},
+        {"min": 25001, "max": null,  "monthly_tax": 208,  "note": "Rs 208/month"}
+      ],
+      "notes": "Monthly payment due by 28th."
+    },
+    "Jharkhand": {
+      "applicable": true,
+      "max_annual": 2500,
+      "payment_frequency": "monthly",
+      "payment_due_day": 15,
+      "return_frequency": "annual",
+      "return_due_month": 3,
+      "return_due_day": 31,
+      "slabs": [
+        {"min": 0,     "max": 25000, "monthly_tax": 0,   "note": "Nil"},
+        {"min": 25001, "max": null,  "monthly_tax": 100,  "note": "Rs 100/month"}
+      ],
+      "notes": "Monthly payment due by 15th."
+    },
+    "Goa": {
+      "applicable": true,
+      "max_annual": 2500,
+      "payment_frequency": "monthly",
+      "payment_due_day": 15,
+      "return_frequency": "annual",
+      "return_due_month": 3,
+      "return_due_day": 31,
+      "slabs": [
+        {"min": 0,     "max": 15000, "monthly_tax": 0,   "note": "Nil"},
+        {"min": 15001, "max": 25000, "monthly_tax": 150,  "note": "Rs 150/month"},
+        {"min": 25001, "max": null,  "monthly_tax": 200,  "note": "Rs 200/month"}
+      ],
+      "notes": "Monthly payment due by 15th."
+    },
+    "Meghalaya": {
+      "applicable": true,
+      "max_annual": 2500,
+      "payment_frequency": "quarterly",
+      "payment_due_months": [7, 10, 1, 4],
+      "payment_due_day": 31,
+      "return_frequency": "annual",
+      "return_due_month": 4,
+      "return_due_day": 30,
+      "slabs": [
+        {"min": 0,     "max": 4166,  "monthly_tax": 0,   "note": "Nil"},
+        {"min": 4167,  "max": null,  "monthly_tax": 200,  "note": "Rs 200/month"}
+      ],
+      "notes": "Quarterly payment. Annual return by 30 April."
+    },
+    "Delhi": {
+      "applicable": false,
+      "notes": "Professional Tax is NOT levied in Delhi."
+    },
+    "Uttar Pradesh": {
+      "applicable": false,
+      "notes": "Professional Tax is NOT levied in Uttar Pradesh."
+    },
+    "Rajasthan": {
+      "applicable": false,
+      "notes": "Professional Tax is NOT levied in Rajasthan."
+    },
+    "Haryana": {
+      "applicable": false,
+      "notes": "Professional Tax is NOT levied in Haryana."
+    },
+    "Punjab": {
+      "applicable": false,
+      "notes": "Professional Tax is NOT levied in Punjab."
+    },
+    "Bihar": {
+      "applicable": false,
+      "notes": "Professional Tax was abolished in Bihar."
+    },
+    "Chhattisgarh": {
+      "applicable": true,
+      "max_annual": 2500,
+      "payment_frequency": "monthly",
+      "payment_due_day": 15,
+      "return_frequency": "annual",
+      "return_due_month": 3,
+      "return_due_day": 31,
+      "slabs": [
+        {"min": 0,     "max": 12500, "monthly_tax": 0,   "note": "Nil"},
+        {"min": 12501, "max": null,  "monthly_tax": 200,  "note": "Rs 200/month"}
+      ],
+      "notes": "Monthly payment by 15th."
+    },
+    "Himachal Pradesh": {
+      "applicable": false,
+      "notes": "Professional Tax is NOT levied in Himachal Pradesh."
+    },
+    "Uttarakhand": {
+      "applicable": false,
+      "notes": "Professional Tax is NOT levied in Uttarakhand."
+    },
+    "Jammu & Kashmir": {
+      "applicable": false,
+      "notes": "Professional Tax is NOT levied in J&K / Ladakh."
+    },
+    "Manipur": {
+      "applicable": true,
+      "max_annual": 2500,
+      "payment_frequency": "monthly",
+      "payment_due_day": 20,
+      "return_frequency": "annual",
+      "return_due_month": 3,
+      "return_due_day": 31,
+      "slabs": [
+        {"min": 0,     "max": 6250,  "monthly_tax": 0,   "note": "Nil"},
+        {"min": 6251,  "max": null,  "monthly_tax": 182,  "note": "Rs 182/month approx"}
+      ],
+      "notes": "Monthly payment by 20th."
+    },
+    "Mizoram": {
+      "applicable": false,
+      "notes": "Professional Tax applicability is minimal in Mizoram."
+    },
+    "Nagaland": {
+      "applicable": false,
+      "notes": "Professional Tax is NOT actively levied in Nagaland."
+    },
+    "Tripura": {
+      "applicable": true,
+      "max_annual": 2500,
+      "payment_frequency": "monthly",
+      "payment_due_day": 20,
+      "return_frequency": "annual",
+      "return_due_month": 3,
+      "return_due_day": 31,
+      "slabs": [
+        {"min": 0,     "max": 7500,  "monthly_tax": 0,   "note": "Nil"},
+        {"min": 7501,  "max": null,  "monthly_tax": 150,  "note": "Rs 150/month"}
+      ],
+      "notes": "Monthly payment by 20th."
+    },
+    "Sikkim": {
+      "applicable": true,
+      "max_annual": 2500,
+      "payment_frequency": "quarterly",
+      "payment_due_months": [7, 10, 1, 4],
+      "payment_due_day": 31,
+      "return_frequency": "annual",
+      "return_due_month": 4,
+      "return_due_day": 30,
+      "slabs": [
+        {"min": 0,     "max": 10000, "monthly_tax": 0,   "note": "Nil"},
+        {"min": 10001, "max": null,  "monthly_tax": 200,  "note": "Rs 200/month"}
+      ],
+      "notes": "Quarterly payments."
+    },
+    "Arunachal Pradesh": {
+      "applicable": false,
+      "notes": "Professional Tax is NOT levied in Arunachal Pradesh."
+    }
+  },
+
+  "labour_welfare_fund": {
+    "Maharashtra": {
+      "applicable": true,
+      "frequency": "half_yearly",
+      "due_months": [6, 12],
+      "due_day": 15,
+      "employer_contribution": 6,
+      "employee_contribution": 3,
+      "notes": "Employer Rs 6 + Employee Rs 3 per employee per month. Payment due June 15 and December 15."
+    },
+    "Karnataka": {
+      "applicable": true,
+      "frequency": "annual",
+      "due_month": 1,
+      "due_day": 15,
+      "employer_contribution": 20,
+      "employee_contribution": 10,
+      "notes": "Annual. Employer Rs 20 + Employee Rs 10. Due January 15."
+    },
+    "Gujarat": {
+      "applicable": true,
+      "frequency": "annual",
+      "due_month": 12,
+      "due_day": 31,
+      "employer_contribution": 6,
+      "employee_contribution": 3,
+      "notes": "Annual. Employer Rs 6 + Employee Rs 3 per month per employee. Payment due December 31."
+    },
+    "West Bengal": {
+      "applicable": true,
+      "frequency": "annual",
+      "due_month": 12,
+      "due_day": 31,
+      "employer_contribution": 3,
+      "employee_contribution": 2,
+      "notes": "Annual. Employer Rs 3 + Employee Rs 2. Due December 31."
+    },
+    "Andhra Pradesh": {
+      "applicable": true,
+      "frequency": "annual",
+      "due_month": 1,
+      "due_day": 31,
+      "employer_contribution": 20,
+      "employee_contribution": 10,
+      "notes": "Annual. Due January 31."
+    },
+    "Telangana": {
+      "applicable": true,
+      "frequency": "annual",
+      "due_month": 1,
+      "due_day": 31,
+      "employer_contribution": 20,
+      "employee_contribution": 10,
+      "notes": "Annual. Due January 31."
+    },
+    "Tamil Nadu": {
+      "applicable": true,
+      "frequency": "half_yearly",
+      "due_months": [7, 1],
+      "due_day": 31,
+      "employer_contribution": 20,
+      "employee_contribution": 10,
+      "notes": "Half-yearly. Due July 31 (Jan-Jun) and January 31 (Jul-Dec)."
+    },
+    "Kerala": {
+      "applicable": true,
+      "frequency": "annual",
+      "due_month": 2,
+      "due_day": 28,
+      "employer_contribution": 20,
+      "employee_contribution": 10,
+      "notes": "Annual. Due February 28."
+    },
+    "Madhya Pradesh": {
+      "applicable": true,
+      "frequency": "half_yearly",
+      "due_months": [6, 12],
+      "due_day": 30,
+      "employer_contribution": 10,
+      "employee_contribution": 5,
+      "notes": "Half-yearly. Due June 30 and December 31."
+    },
+    "Haryana": {
+      "applicable": true,
+      "frequency": "annual",
+      "due_month": 12,
+      "due_day": 31,
+      "employer_contribution": 31,
+      "employee_contribution": 16,
+      "notes": "Annual. Employer Rs 31 + Employee Rs 16 per year. Due December 31."
+    },
+    "Delhi": {
+      "applicable": true,
+      "frequency": "half_yearly",
+      "due_months": [7, 1],
+      "due_day": 15,
+      "employer_contribution": 3,
+      "employee_contribution": 1.5,
+      "notes": "Half-yearly. Employer Rs 3 + Employee Rs 1.50 per month. Due July 15 and January 15."
+    },
+    "Goa": {
+      "applicable": true,
+      "frequency": "annual",
+      "due_month": 12,
+      "due_day": 31,
+      "employer_contribution": 20,
+      "employee_contribution": 10,
+      "notes": "Annual. Due December 31."
+    },
+    "Odisha": {
+      "applicable": true,
+      "frequency": "annual",
+      "due_month": 12,
+      "due_day": 31,
+      "employer_contribution": 6,
+      "employee_contribution": 3,
+      "notes": "Annual. Due December 31."
+    },
+    "Punjab": {
+      "applicable": true,
+      "frequency": "annual",
+      "due_month": 12,
+      "due_day": 31,
+      "employer_contribution": 20,
+      "employee_contribution": 10,
+      "notes": "Annual. Due December 31."
+    },
+    "Chhattisgarh": {
+      "applicable": false,
+      "notes": "LWF not actively levied in Chhattisgarh."
+    },
+    "Rajasthan": {
+      "applicable": false,
+      "notes": "LWF not actively levied in Rajasthan."
+    },
+    "Uttar Pradesh": {
+      "applicable": false,
+      "notes": "LWF not actively levied in Uttar Pradesh."
+    },
+    "Himachal Pradesh": {
+      "applicable": false,
+      "notes": "LWF not actively levied in Himachal Pradesh."
+    },
+    "Uttarakhand": {
+      "applicable": false,
+      "notes": "LWF not actively levied in Uttarakhand."
+    },
+    "Jharkhand": {
+      "applicable": false,
+      "notes": "LWF not actively levied in Jharkhand."
+    },
+    "Assam": {
+      "applicable": false,
+      "notes": "LWF not actively levied in Assam."
+    },
+    "Bihar": {
+      "applicable": false,
+      "notes": "LWF not actively levied in Bihar."
+    },
+    "Jammu & Kashmir": {
+      "applicable": false,
+      "notes": "LWF not applicable in J&K."
+    }
+  },
+
+  "shop_establishment": {
+    "notes": "Shop & Establishment registration/renewal is state-specific. Most states require annual renewal by 31 December or March 31. Some states have moved to lifetime registration.",
+    "states": {
+      "Maharashtra": {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Municipal Corporation / Labour Dept"},
+      "Karnataka":   {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Dept of Labour"},
+      "Gujarat":     {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Inspector of Shops"},
+      "Delhi":       {"renewal": "lifetime", "notes": "Delhi moved to lifetime registration (one-time)"},
+      "Tamil Nadu":  {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Labour Dept"},
+      "West Bengal": {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Labour Dept"},
+      "Andhra Pradesh": {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Labour Dept"},
+      "Telangana":   {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Labour Dept"},
+      "Kerala":      {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Labour Dept"},
+      "Rajasthan":   {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Labour Dept"},
+      "Madhya Pradesh": {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Labour Dept"},
+      "Uttar Pradesh":  {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Labour Dept"},
+      "Haryana":        {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Labour Dept"},
+      "Punjab":         {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Labour Dept"},
+      "Bihar":          {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Labour Dept"},
+      "Odisha":         {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Labour Dept"},
+      "Goa":            {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Labour Dept"},
+      "Jharkhand":      {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Labour Dept"},
+      "Chhattisgarh":   {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Labour Dept"},
+      "Assam":          {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Labour Dept"},
+      "Himachal Pradesh": {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Labour Dept"},
+      "Uttarakhand":    {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Labour Dept"},
+      "Jammu & Kashmir": {"renewal": "annual", "renewal_month": 12, "renewal_day": 31, "authority": "Labour Dept"}
+    }
+  }
+}
