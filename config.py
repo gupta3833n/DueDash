@@ -5,21 +5,37 @@ Centralised config — override via environment variables or edit here directly.
 
 import os
 
+
+def _get_secret(key: str, default: str = "") -> str:
+    """Load a secret: Streamlit secrets → env var → default."""
+    try:
+        import streamlit as st
+        val = st.secrets.get(key, "")
+        if val:
+            return str(val)
+    except Exception:
+        pass
+    val = os.getenv(key, "")
+    if val:
+        return val
+    return default
+
+
 # ── Google Sheets ─────────────────────────────────────────────────────────────
-GOOGLE_CREDENTIALS_FILE = os.getenv("GOOGLE_CREDENTIALS_FILE", "")   # path to service-account JSON
-GOOGLE_SHEET_ID          = os.getenv("GOOGLE_SHEET_ID", "")          # spreadsheet ID from URL
-GOOGLE_SHEET_NAME        = os.getenv("GOOGLE_SHEET_NAME", "Compliance Calendar")
+GOOGLE_CREDENTIALS_FILE = _get_secret("GOOGLE_CREDENTIALS_FILE")   # path to service-account JSON
+GOOGLE_SHEET_ID          = _get_secret("GOOGLE_SHEET_ID")          # spreadsheet ID from URL
+GOOGLE_SHEET_NAME        = _get_secret("GOOGLE_SHEET_NAME", "Compliance Calendar")
 
 # ── Email / SMTP ──────────────────────────────────────────────────────────────
-SMTP_HOST     = os.getenv("SMTP_HOST", "smtp.gmail.com")
-SMTP_PORT     = int(os.getenv("SMTP_PORT", "587"))
-SMTP_USER     = os.getenv("SMTP_USER", "")
-SMTP_PASSWORD = os.getenv("SMTP_PASSWORD", "")
-ALERT_EMAIL   = os.getenv("ALERT_EMAIL", "")  # recipient for reminders
+SMTP_HOST     = _get_secret("SMTP_HOST", "smtp.gmail.com")
+SMTP_PORT     = int(_get_secret("SMTP_PORT", "587"))
+SMTP_USER     = _get_secret("SMTP_USER")
+SMTP_PASSWORD = _get_secret("SMTP_PASSWORD")
+ALERT_EMAIL   = _get_secret("ALERT_EMAIL")  # recipient for reminders
 EMAIL_DAYS_BEFORE = [1, 3, 7, 15]             # days before due date to send alerts
 
 # ── Gemini API (future AI features) ──────────────────────────────────────────
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
+GEMINI_API_KEY = _get_secret("GEMINI_API_KEY")
 
 # ── App ───────────────────────────────────────────────────────────────────────
 APP_TITLE   = "DueDash"
